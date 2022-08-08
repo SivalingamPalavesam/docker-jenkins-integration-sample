@@ -19,18 +19,21 @@ public class RetrieveData  {
 	@Autowired
     private PostgresCustomerRepository postgresCustomerRepository;
 
-//    @Transactional("transactionManager")
     public List<Address> findAllMysqlCustomers() {
 
         return mysqlCustomerRepository.findAll();
     }
 
-    //@Transactional("postgresTransactionManager")
     public List<Account> findAllPostgresCustomers() {
 
         return postgresCustomerRepository.findAll();
     }
 
+    
+    
+    
+    
+    
 //    @Transactional("transactionManager")
 //    public void saveMysqlCustomer(Address customer) {
 //

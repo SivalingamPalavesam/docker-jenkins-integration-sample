@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog">
+	<changeSet id="5" author="sivalingam">
+		<createTable tableName="account">
+			<column name="id" type="int" value="2" >
+				<constraints primaryKey="true" />
+			</column>
+			<column name="balance" type="int"  />
+			<column name="accountName" type="varchar" />
+			<column name="dateOpened" type="varchar" />
+		</createTable>
+	</changeSet> 
+	
+<!-- 	    <include file="db.migration/postgresql_insertdata.sql" />
+ -->	
+</databaseChangeLog>
