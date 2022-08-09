@@ -14,7 +14,7 @@ public class Account {
 	private Integer id;
 	
 	@Column(name = "balance")
-	private String balance;
+	private int balance;
 
 	@Column(name = "account_name")
 	private String accountName;
@@ -26,7 +26,7 @@ public class Account {
 		super();
 	}
 
-	public Account(Integer id, String balance, String accountName, String dateOpened) {
+	public Account(Integer id, int balance, String accountName, String dateOpened) {
 		super();
 		this.id = id;
 		this.balance = balance;
@@ -42,11 +42,11 @@ public class Account {
 		this.id = id;
 	}
 
-	public String getBalance() {
+	public int getBalance() {
 		return balance;
 	}
 
-	public void setBalance(String balance) {
+	public void setBalance(int balance) {
 		this.balance = balance;
 	}
 

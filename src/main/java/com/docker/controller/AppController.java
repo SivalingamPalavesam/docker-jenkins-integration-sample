@@ -45,15 +45,15 @@ public class AppController {
         return retrieveData.findAllMysqlCustomers();
     }
 
-//    @PostConstruct
-//    public void createPostgresCustomer() {
-//
-//    	postgresCustomerRepository.saveAll(Stream.of(
-//    			new Account(100,2000.21 , "Raja","16/2/2222"),
-//    			new Account(101, 1000.10, "Vel","13/4/2123"),
-//    			new Account(102, 34330.10, "kavi","23/4/2323"))
-//    			.collect(Collectors.toList()));
-//    }
+    @PostConstruct
+    public void createPostgresCustomer() {
+
+    	postgresCustomerRepository.saveAll(Stream.of(
+    			new Account(100,2000 , "Raja","16/2/2222"),
+    			new Account(101, 1000, "Vel","13/4/2123"),
+    			new Account(102, 34330, "kavi","23/4/2323"))
+    			.collect(Collectors.toList()));
+    }
     
     @GetMapping("/postgres")
     public List<Account> getAllPostgresCustomers() {
